@@ -9,6 +9,8 @@ class SampleWebView extends StatefulWidget {
 class _SampleWebViewState extends State<SampleWebView> {
   String home = "https://www.vbt.com.tr/";
   WebViewController controller;
+  String initialUrl = "https://www.vbt.com.tr/sayfa/kilometre-taslari";
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -24,7 +26,7 @@ class _SampleWebViewState extends State<SampleWebView> {
       onWebViewCreated: (controller) {
         this.controller = controller;
       },
-      initialUrl: "https://www.vbt.com.tr/sayfa/kilometre-taslari",
+      initialUrl: initialUrl,
     );
   }
 
