@@ -54,7 +54,6 @@ class _SampleWebViewState extends State<SampleWebView> {
         icon: Icon(Icons.backspace, color: Colors.red),
         onPressed: () {
           controller.goBack();
-          // controller.
         });
   }
 }
